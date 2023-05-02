@@ -129,7 +129,7 @@ int main() {
             if (closed) break;
             mqtt_queue.call(publish_message, &client);
             client.yield(500);
-            ThisThread::sleep_for(1000ms);
+            ThisThread::sleep_for(100ms);
     }
 
     printf("Ready to close MQTT Network......\n");
